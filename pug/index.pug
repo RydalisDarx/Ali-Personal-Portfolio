@@ -1,0 +1,119 @@
+mixin card(image, title, make, desc)
+    .card 
+        img(src=image)
+        h2= title
+        h6= make
+        p= desc
+
+mixin redirectCard(link, image, title, make, desc)
+    a(href=link)
+        +card(image, title, make, desc)
+
+
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        meta(name='referer' content='always')
+        link(rel='stylesheet' href='styles.css')
+        title Ali's Portfolio
+    body
+        include ./includes/carosel.pug
+        header#home(name='home')
+            .container
+                nav.flex.items-centre.justify-between
+                    .left.flex.justify-right
+                        .logo
+                            <img src="../img/logo.png">
+                        div
+                            a(href='#home') Home
+                            a(href='#about') About
+                            a(href='#projects') Projects
+                            a(href='#info') Info
+                    .right
+                        a(href='#contacts')
+                            button.btn.btn-primary Contact
+                .hero.flex.items-centre.justify-between
+                    .left.flex-1.justify-center
+                        img(src='./img/self-image3.jpg' alt='The King')
+                    .right.flex-1
+                        h6
+                            i Ali Hassan
+                        h1
+                            span Game Designer
+                            |  and 
+                            span UX Engineer
+                        div
+                            a(href="../img/HASSAN_ALI_Resume2.pdf" download)
+                                button.btn.btn-secondary DOWNLOAD CV
+        section#about.about(name='about')
+            .container.flex.items-centre
+                .right.flex-1.justify-center
+                    img(src='./img/self-image2.jpg' alt='The King')
+                .right.flex-1
+                    h1
+                        | What I can Do For  
+                        span  Users 
+                        | like 
+                        span You
+                        | !
+                    h3 My Traits, Skills, and Features 
+                    p
+                        | Throughout my college life at UC Irvine, making games and being a back-end programmer for most of my time there, 
+                        | I realized the feeling I wanted to replicate from games I loved was through finely tweaking and understanding 
+                        | how users experience games. From simple 2D games that help people type better to making sure a VR game feels 
+                        | like reality, I figured that experiences should be assessible and it takes more than just simple programming 
+                        | logic to understand this aspect of human interaction. I aimed to specialize what I did, not just back-end systems 
+                        | management, but also user experience engineering.
+                    p
+                        | Now that I am out of college with a B.S. in Game Design and Interactive Media, I'm looking to apply my UX Engineering and Game Programming skills 
+                        | to allow anyone and everyone to enjoy game experiences that are enamoured with and trying to find any opportunity to do so. I'm proficient with Unity, 
+                        | Godot, and Unreal as a programmer and use Figma and Miro to regularly mockup prototypes and put ideas on paper. Alongside that, I'm use to making game 
+                        | documents in HTML/CSS/JavaScript for analog games. 
+                    p
+                        | I'm no stranger to tackling difficult problems and returning solutions that are expandable and adaptive to what the user wants, be it accessability or a 
+                        | simple viewport alteration. With experience making a couple of games on itch.io, along with my passion for games as a medium since I was young, I hope
+                        | that something I've made will catch your eye.
+        section#projects.projects(name='projects')
+            .container
+                h1.projects-head Projects
+                p Game and Software Prototype Showcase
+                .card-grid
+                    +redirectCard('html/neon-rhythm.html', './img/NeonRhythm/NeonRhythm_logo.JPG', 'Neon Rhythm', 'Unity', 'A rhythm game featuring early 2000s to late 90s rock music and bands!')
+                    +redirectCard('html/spellbook.html', './img/Spellbook/spellbook_logo.JPG', 'Spellbook', 'Unity', 'An action typing game testing and improving users typing skills and reaction time!')
+                    +redirectCard('html/turpentine-vr.html', './img/TurpentineVR/turpentinevr_logo.JPG', 'Turpentine VR', 'Unity', 'A VR exerience playing as an oil tycoon potentially saving the environment!')
+                    //- +redirectCard('vov.html', './img/VOV/vov_logo.JPG', 'Vault of Virtue', 'TTRPG document made with Markdown/HTML/CSS', 'A new d20 TTRPG system exploring the nature of death, rememberence, and relationships!')
+                    +redirectCard('html/arcane-combat.html', './img/ArcaneCombat/SpaceBall.png', 'Arcane Combat', 'Tabletop Game', 'A card battler where casters set up wards and spells from their spell deck!')
+                    +redirectCard('html/dnd.html', './img/D&D/D&D_logo.JPG', 'D&D Homebrew', 'TTRPG documents made with Markdown/HTML/CSS', 'Homebrew content expanding the gameplay of Dungeons and Dragons 5th Edition!')
+                    +redirectCard('html/oof-sleep.html', './img/OOF/OOF_logo.JPG', 'O.O.F. Sleep App', 'Figma Protoype', 'A sleep app prototype dedicated to improving users sleep habits and sleep quality!')
+        section#info.info(name='info')
+            .container.flex.items-centre
+                .left.flex-1
+                    h1
+                        | About 
+                        span Me
+                        |!
+                    h3 Why Am I here? What do I like? 
+                    p
+                        | I started playing games at a very young age with Pokemon Leafgreen, and from then on I looked at many 
+                        | games to see what the medium had in store for me. My passion for games, though, started after playing 
+                        | Final Fantasy 6. To see a game that made me reflect the emotions the characters had in it and make me want 
+                        | to pursue their stories as if I were a part of the game was the eye-opening experience that made me choose 
+                        | game development.
+                    p 
+                        | There are many other games I love, though, especially games with no set experience for the player, which allows people 
+                        | to find their own entertainment. Games like Dungeons and Dragons or Blades in the Dark are my playgrounds for 
+                        | putting every idea I've ever had in a playable form for people to experience with me. I also enjoy games that 
+                        | let me sink hundreds of hours into thinking and understanding them, both while playing and between play sessions. 
+                        | For example, Balder's Gate 3 and Divinity: Original Sin's character customizations and non-linear progressions allow me 
+                        | to paint my own experience and think about how I want to experience each individual part of the game to my liking.  
+                    p
+                        | I guess that's one of the bigger things about me as a person, I like understanding and seeing things through a  
+                        | theoretical looking glass. I send a lot of time learning new things on my free time and seeing how I can apply my learnings 
+                        | to my passions. I frequently read articles, books, and research papers about the wildest things to pique my curious mind and 
+                        | see if theres something new I can re-imagine and distribute in my own way. Due to this, I tend to pick up and try out a lot of 
+                        | creative fields like art and music or I learn more about cultures through learning langauges and living among them.
+                .right.flex-1.justify-center
+                    img.content-huge.imgfloat-right(src='./img/self-image.jpg' alt='The King')
+        include ./includes/footer.pug

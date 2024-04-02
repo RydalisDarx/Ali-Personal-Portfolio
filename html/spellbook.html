@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referer" content="always">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Ali's Portfolio - Spellbook</title>
+  </head>
+  <body>
+    <header id="home" name="home">
+      <div class="container">
+        <nav class="flex items-centre justify-between">
+          <div class="left flex justify-right">
+            <div class="logo"><img src="../img/Spellbook/spellbook_logo.JPG" alt="Spellbook logo"></div>
+            <div><a href="../index.html">Back</a></div>
+          </div>
+          <div class="right"><a href="#contacts">
+              <button class="btn btn-primary">Contact</button></a></div>
+        </nav>
+        <div class="hero flex items-centre justify-between">
+          <div class="left flex-1 justify-center"><img src="../img/Spellbook/spellbook_funnyman.jpg" alt="Spellbook landing page"></div>
+          <div class="right flex-1">
+            <h6><i>Spellbook</i></h6>
+            <iframe frameborder="0" src="https://itch.io/embed/1967752?linkback=true"><a href="https://kingben.itch.io/spellbook" target="_blank">
+                <p>Spellbook by KingBen, zzzergling, codypfrunder, davidlh123, dnajerab, RydalisDarx, Poorgrammer, Niikonnen, k10c</p></a></iframe>
+            <p style="padding-top:1rem;"><i>Spellbook is a bullet-hell boss-rush game in which you cast spells and dodge attacks all using your keyboard. 
+                Both of these mechanics revolve around pressing certain keys or typing certain words. 
+                Test your typing speed and reflexes in this fast-paced, action-heavy take on a typing game.</i></p>
+            <p style="padding-top:1rem;">
+              Games can be both fun and help train people's skills, in this case, we aimed to help people get use to typing.
+              Many people dont know how to type properly or type without looking at their hands. I joined the Spellbook team as a 
+              programmer to make the basis of the typing system used to cast spells, allowing people to input a spell command while 
+              dodging attacks enemies throw at them, alongside information screens. This is the first formal project I joined, 
+              so indulge me in my learning process.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="info" id="info" name="info">
+      <div class="container flex items-centre">
+        <div class="left flex-1 justify-center"><img class="content-medium imgfloat-left" src="../img/Spellbook/spellbook_prototype.JPG" alt="The main gameplay with no art implemented"></div>
+        <div class="right flex-1">
+          <h1 class="left-margin">Learning  <span>Unity</span></h1>
+          <p class="left-margin">
+            I walked into the team with a decently strong grasp of C++ and Java, getting my A.S. in Computer Science before transfering to UC Irvine 
+            and joining the Spellbook team as my first game. Because of my prior experience, I knew learning C# would be easy, but learning the structure
+            of Unity and the game development pipeline was going be harder. Spellbook's team of people were much more experienced with game development than 
+            I was, so I played a more supplementary role doing the smaller things, or so I hoped I would.
+          </p>
+          <p class="left-margin">
+            The first thing I worked on was one of the core parts of the gameplay loop: the spell input system. Since this was the beginning of development, I 
+            also needed to make some spells to test the system as well, so I needed to learn a lot about Unity very quickly. I read almost an entirely book worth of 
+            Unity documentation, in which I learned about Scriptable Objects and Colliders, and made myself a small fireball effect to test on enemies.
+          </p>
+          <p class="left-margin">Of course, I needed the system to be expandable for multiple spells and telling the game when someone is typing a spell, or typing to move.</p>
+        </div>
+      </div>
+    </section>
+    <section class="info" id="info" name="info">
+      <div class="container flex items-centre">
+        <div class="left flex-1 justify-center"><img class="content-small imgfloat-left" src="../img/Spellbook/spellbook_gameplay.JPG" alt="The main character casting FIRE"></div>
+        <div class="right flex-1">
+          <h1 class="left-margin">Applying and Expanding my  <span>Learnings</span></h1>
+          <p class="left-margin">
+            To seperate movement and casting, I made it so all capital letter inputs would cast spells. This meant that lowercase letters would move the player 
+            and uppercase letters would add to the casting string. Afterwards, a simple Enter button press would fire the spell off if you spelled it correctly.
+            We did not have to account for inputs simultaneously moving and casting, since we seperated it by character input and not button input, vastly simplifying 
+            the input system and not relying on two seperate input controllers for movement and casting. This would be beneficial in other ways too, since through QA
+            testing we found that people did not want to hold down the Shift key to cast spells and wanted to have a toggle, which already existed in this implementation 
+            in the form of the CapsLock key! 
+          </p>
+          <p class="left-margin">
+            Alongside my fireball, I made a rudementary spell factory that will create a new spell at runtime based on this input system I made, which would only be 
+            the fireball when inputting "FIRE". However, as new spells were made, adding it to the system became simple as all the new spell effect needed to do was implement 
+            the SpellFactory and have stats based on the Scriptable Object created for the spell. In retrospect, this system could be refined and a layer of abstraction can be
+            removed, but this system was already expandable and adaptable out the gate. 
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="info" id="info" name="info">
+      <div class="container flex items-centre">
+        <div class="left flex-1">
+          <h1>Working on  <span>UX Engineering</span></h1>
+          <p class="right-margin">
+            After implementing the basis of the spell system, I realized there were a lot of parts to the game that felt unintitive to users learning to type. So, 
+            I started developing parts of the user experience, like the tutorial, spellcasting interface, and information screens. I stopped programming as much and
+            instead worked with Unity's internal systems of Canvases and TextMeshes to make portions of the spellcasting interface, which shows the string you are constructing 
+            when you are casting spells.  
+          </p>
+          <p class="right-margin">
+            Alongside that, I worked on portions of the level select screen and the spell description page. These are to make sure players know what each spell in the game does 
+            and can find a boss to fight without having to replay the tutorial of the game. Though, this also allows players to replay the tutorial whenever they want, if they take 
+            a break from playing or need a refresher of how some things work. I wanted the game to play well, but I also wanted people to know how to play it.
+          </p>
+        </div>
+        <div class="right flex-1 justify-center"><img class="content-medium imgfloat-right" src="../img/Spellbook/spellbook_levelselect.JPG" alt="The boss select of Spellbook"></div>
+      </div>
+    </section>
+    <section class="info" id="info" name="info">
+      <div class="container flex items-centre">
+        <div class="left flex-1">
+          <h1>The Final <span>Build</span></h1>
+          <p class="right-margin">
+            At the end of production, I realized what I wanted to focus on in my game development carrer. I loved 2D games and thinking about the user experience, but I also 
+            enjoyed making well constructed back-end systems that store and send information between the user and system. This would be the start of what I would come to love in the 
+            game development life cycle.
+          </p>
+          <p class="right-margin">You can watch some gameplay on the right, play the game on <a href="https://kingben.itch.io/spellbook" target="_blank">itch.io</a> and even see exactly what work I did on the game by looking at the <a href="https://github.com/BenWargowski/Spellbook/commits/main/?author=RydalisDarx" target="_blank">commit history</a> on the game's maintained GitHub repository.</p>
+        </div>
+        <div class="right flex-1 justify-center">
+          <video class="content-medium imgfloat-right" autoplay="false" controls loop>
+            <source src="../vid/spellbook.mov" type="video/mov">
+            <source src="../vid/spellbook.webm" type="video/webm">
+            <source src="../vid/spellbook.mp4" type="video/mp4"><img src="../img/Spellbook/spellbook_thumb.JPG" title="Your browser does not support mov, webm, or mp4 formats">
+          </video>
+        </div>
+      </div>
+    </section>
+    <footer id="contacts" name="contacts">
+      <div class="container">
+        <div>
+          <h1>Contacts</h1>
+        </div>
+        <nav class="flex items-centre justify-between">
+          <div class="left flex justify-left"><a href="mailto:alizhassan199@gmail.com?subject=Contact%20Ali%20Hassan&amp;body=Hello" target="_blank">Email</a>
+            <div class="icons"><a href="https://linktr.ee/rydalizhassan" target="_blank"><img src="../../img/linktree.png"></a><a href="https://www.linkedin.com/in/ali-hassan-19592819a/" target="_blank"><img src="../../img/linkedin.png"></a><a href="https://rydalisdarx.itch.io" target="_blank"><img src="../../img/itchio.png"></a></div>
+          </div>
+          <div><a href="../img/HASSAN_ALI_Resume2.pdf" download>
+              <button class="btn btn-secondary">DOWNLOAD CV</button></a></div>
+        </nav>
+        <div class="topper justify-right" style="text-align: right;"><a href="#home"> Back to top </a></div>
+      </div>
+    </footer>
+  </body>
+</html>

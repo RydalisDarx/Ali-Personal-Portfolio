@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referer" content="always">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Ali's Portfolio - Arcane Combat TTCG</title>
+  </head>
+  <body>
+    <header id="home" name="home">
+      <div class="container">
+        <nav class="flex items-centre justify-between">
+          <div class="left flex justify-right">
+            <div class="logo"><img src="../img/ArcaneCombat/SpaceBall.png" alt="Arcane Combat page logo"></div>
+            <div><a href="../index.html">Back</a></div>
+          </div>
+          <div class="right"><a href="#contacts">
+              <button class="btn btn-primary">Contact</button></a></div>
+        </nav>
+        <div class="hero flex items-centre justify-between">
+          <div class="left flex-1 justify-center"><img src="../img/ArcaneCombat/CurseIcon.png" style="filter:invert(1);"></div>
+          <div class="right flex-1">
+            <h6><i>Arcane Combat TTCG</i></h6>
+            <p style="padding-top:1rem;">
+              Video games are derived from analog games, card games being one of the more complex versions of analog games. 
+              Arcane Cards is a project I joined because most of the enjoyment from analog games comes from a well-built and tested
+              user experience. With all the spells you will be concentrating on, casting, and pulling from the deck, there will be a lot of things
+              players need to keep track of manually in an analog game. My goal was to make the potentially turbulant and ever changing game state 
+              easy for players to understand and manuever around at any given time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="info" id="info" name="info">
+      <div class="container flex items-centre">
+        <div class="left flex-1 justify-center">
+          <iframe class="imgfloat-left" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2F1RxJ4uTCQTGOMpwCJpgMKz%2FTCG-Figma%3Fpage-id%3D0%253A1%26node-id%3D1-2%26mode%3Ddesign%26t%3D8csktM79MpyZn65x-1" allowfullscreen></iframe>
+        </div>
+        <div class="right flex-1">
+          <h1 class="left-margin">Designing the <span>Playfield</span></h1>
+          <p class="left-margin">
+            I was tasked with laying out the experience of play for Arcane Combat. Combined with the rules of the game, people will always play the game in a way that makes intuitive 
+            sense to them, so I had to make a layout that would let people know what elements of the board are related to each other at a glance. For example, the cards people are casting 
+            are placed front and center so both players can see what will potentially in play soon, which are also seperate from the concentration circle of cards that will have lasting effects 
+            and are bound to a character. 
+          </p>
+          <p class="left-margin">
+            Aside from the main gameplay, there are harder to allign components, like where to put the health and mana if I were to make this an online game. Also, the placement of the deck 
+            and discard piles would change based on the dominant handedness of the player, so elements like those will change based on how the player interacts with the world. Because of that, I 
+            explicitly made sure that their placement isn't neccesarily static, it can be moved around and swapped with other elements based on what players want, but also making it seperate from the 
+            rest of the game to show that these are not front and center objects the opponent should care about.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="info" id="info" name="info">
+      <div class="container flex items-centre">
+        <div class="left flex-1 justify-center"><img class="content-medium imgfloat-right" src="../img/ArcaneCombat/ArcaneCombat_CardMaker.JPG" alt="Card Maker for GIMP, including layers for editing existing cards"></div>
+        <div class="right flex-1">
+          <h1 class="left-margin"><span>Creating </span>Cards <span>In Mass</span></h1>
+          <p class="left-margin">
+            Next in the creation process would be making cards to play in the game, both designing their effects and actually making the assets, which I chose GIMP to make them in since it was
+            free. The anatomy of the card matters a lot to understanding the game, so whatever system I make for making cards should have a similar intuitiveness. For example, a cards effect and image 
+            are the most recognisable parts of a card and will be front and center and easy to see. Other information, like card type icons and activation costs are still important, so they are towards the corners. 
+            Lastly is the colour system, similar to Magic: The Gathering, which dictates the archetype and aesthetic of the game. I went through many iterations of colours to try and get colours that would be colourblind friendly.
+            In the end though, listing the colours on the cards will always be the best.  
+          </p>
+          <p class="left-margin">
+            The card maker was an engine that I made for designers on the team to make card prototypes quickly for testing and iteration. It is a tool I plan to expand as more card types are made. For a physical 
+            card game, the cards here will work for print, but for an online card game I plan to make a template for a system to build during runetime from a database, with something similar to this card maker.
+            The cards themselves are simple, with temporary pictures, and effects we can iterate upon. The game is definitely not finished, it is still in a testing phase, but a phase people have played and enjoyed.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="info" id="info" name="info">
+      <div class="container flex items-centre">
+        <div class="left flex-1">
+          <h1>The <span>Current Card Game</span></h1>
+          <p class="right-margin">
+            It takes a while to make a card game, especially one that can compell people to play it enough to collect cards and play with other people recreationally. Though 
+            Arcane Combat is not finished, it is in a simulationist testing phase, it has had enough testing for people to know they enjoy the game a lot. Oh, and enough testing that 
+            I know what changes to make playing the game easier for players. I want to see this game come to fruition in the future, but the work that I have done for the project currently has
+            been paramount to the production of it. 
+          </p>
+          <p class="right-margin" style="margin-bottom:0rem;">You can read the GDD for the game, which is essentially the game manual on the right. </p>
+        </div>
+        <div class="right flex-1 justify-center">
+          <iframe class="imgfloat-right" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="../img/ArcaneCombat/Arcane Combat TCG GDD.pdf" loading="lazy" title="Arcane Combat GDD" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <footer id="contacts" name="contacts">
+      <div class="container">
+        <div>
+          <h1>Contacts</h1>
+        </div>
+        <nav class="flex items-centre justify-between">
+          <div class="left flex justify-left"><a href="mailto:alizhassan199@gmail.com?subject=Contact%20Ali%20Hassan&amp;body=Hello" target="_blank">Email</a>
+            <div class="icons"><a href="https://linktr.ee/rydalizhassan" target="_blank"><img src="../../img/linktree.png"></a><a href="https://www.linkedin.com/in/ali-hassan-19592819a/" target="_blank"><img src="../../img/linkedin.png"></a><a href="https://rydalisdarx.itch.io" target="_blank"><img src="../../img/itchio.png"></a></div>
+          </div>
+          <div><a href="../img/HASSAN_ALI_Resume2.pdf" download>
+              <button class="btn btn-secondary">DOWNLOAD CV</button></a></div>
+        </nav>
+        <div class="topper justify-right" style="text-align: right;"><a href="#home"> Back to top </a></div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items-centre {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: rgb(170, 9, 159);
+  color: rgb(55, 0, 59);
+  margin-top: -15rem;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  border-color: rgb(141, 29, 221);
+  color: rgb(141, 29, 221);
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: rgb(141, 29, 221);
+  border-color: rgb(141, 29, 221);
+}
+
+.btn-secondary:hover {
+  background: rgb(170, 9, 159);
+  color: rgb(55, 0, 59);
+  border-color: transparent;
+}
+
+.content-small {
+  width: auto;
+  height: 20rem;
+  max-width: 40vw;
+  max-height: 40vh;
+}
+
+.content-medium {
+  width: auto;
+  height: 25rem;
+  max-width: 50vw;
+  max-height: 50vh;
+}
+
+.content-large {
+  width: auto;
+  height: 30rem;
+  max-width: 60vw;
+  max-height: 60vh;
+}
+
+.content-huge {
+  width: auto;
+  height: 40rem;
+  max-width: 70vw;
+  max-height: 70vh;
+}
+
+.content-gargantuan {
+  width: auto;
+  height: 50rem;
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+@media screen and (max-width: 768px) {
+  .right-margin {
+    padding-right: 0em;
+  }
+  .left-margin {
+    padding-left: 0em;
+  }
+  .justify-right {
+    display: flex;
+    justify-content: center;
+  }
+  .justify-left {
+    display: flex;
+    justify-content: center;
+  }
+  .imgfloat-right {
+    float: none;
+  }
+  .imgfloat-left {
+    float: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .right-margin {
+    padding-right: 1em;
+  }
+  .left-margin {
+    padding-left: 1em;
+  }
+  .justify-right {
+    display: flex;
+    justify-content: right;
+  }
+  .justify-left {
+    display: flex;
+    justify-content: left;
+  }
+  .imgfloat-right {
+    float: right;
+  }
+  .imgfloat-left {
+    float: left;
+  }
+}/*# sourceMappingURL=utilities.css.map */

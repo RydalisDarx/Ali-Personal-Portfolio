@@ -1,0 +1,96 @@
+doctype html
+html
+    head
+      meta(charset='utf-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1')
+      meta(name='referer' content='always')
+      link(rel='stylesheet' href='../styles.css')
+      title Ali's Portfolio - Turpentine VR
+    body
+        header#home(name='home')
+          .container
+            nav.flex.items-centre.justify-between
+              .left.flex.justify-right
+                .logo
+                  img(src='../img/TurpentineVR/turpentinevr_logo.JPG' alt='Turpentine VR logo')
+                div
+                  a(href='../index.html') Back
+              .right
+                a(href='#contacts')
+                  button.btn.btn-primary Contact
+            .hero.flex.items-centre.justify-between
+              .left.flex-1.justify-center
+                img(src='../img/TurpentineVR/turpentinevr_logo.JPG' alt='Turpentine landing page')
+              .right.flex-1
+                h6
+                  i Turpentine VR
+                iframe(frameborder="0" src="https://itch.io/embed/2463515?linkback=true")
+                    a(href="https://goozmabackatitagain.itch.io/turpentine-vr" target="_blank")
+                        p Turpentine VR by GoozmaBackAtItAgain, dylantruong, RydalisDarx, Jaynie Rose, snakelock, TheBananaSlug, chi, peeandpoomafiaboss, Reymar Santos
+                p(style='padding-top:1rem')
+                  i Against your will, you have now become the CEO of the world's largest oil tycoon, Turpent Inc. Of course, 
+                  | no one can stop you from joining the masses of the activists. Why let some greedy advisors get in the way 
+                  | of saving the world? Sign bills and seal deals on the phone to decide the fate of the company!
+                p(style='padding-top:1rem')
+                  | Games are a storytelling device that can teach people and help them understand the world. Sometimes it can be used 
+                  | to promote action towards a better world, in this case, a greener world. I joined the Turpentine VR team to make an 
+                  | experience that will teach people about the pollution and global warming and teach them what we as people can do to 
+                  | get lawmakers and companies to stop this global epidemic before it is too late. As a UI/UX designer for this game, I 
+                  | had to understand the realm of VR to immerse people into the world of Turpentine.
+
+        section#info.info(name='info')
+          .container.flex.items-centre
+            .left.flex-1
+              h1.left-margin
+                | Virtual Reality in 
+                span Unity
+              p.left-margin
+                | Turpentine VR was made in a very short time frame, 5 weeks, so learning the VR Toolkit in Unity was the most important step 
+                | towards making a useful interface in virtual reality. It comes as no surprise that the VR space is much different compared to 
+                | a computer screen, since players have the entire physical space of motion to move around and see the game world in, there is no one place 
+                | I can forcefully put information so the player can always have it at a glance. 
+              p.left-margin
+                | All this meant is that there needed to be something in the game to ensure players would be able to find their way around, know what is happening 
+                | and still feel immersed in the game's world. If I couldn't do that last part, then what was the point of making it in VR anyways. This complication 
+                | forced me out of my comfort zone and made me think about how to implement this into Unity, since a normal Canvas wouldn't work on the VR headset viewport.
+                | Every Canvas needed to be a World Space canvas players can physically tap on and point at.
+              p.left-margin
+                | So, I underwent the ideation process of making tablets, papers, and pressable buttons for the player to use in place of clicking on the screen, 
+                | as those would be instruments found in an office setting that can replicate traditional UI. 
+            .right.flex-1.justify-center
+              img.content-small.imgfloat-left(src='../img/TurpentineVR/turpentinevr_gameplay.JPG' alt='Unity VR interaction with Canvases with pointers')
+        section#info.info(name='info')
+          .container.flex.items-centre
+            .left.flex-1.justify-center
+              iframe(style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlFBH0ihc5xVetopIltaZ5s%2FUrbanRush%252FTurpetine_UIConcepts%3Ftype%3Dwhiteboard%26node-id%3D20%253A32%26t%3DoN7ETKONVQhgXDz2-1" allowfullscreen)
+            .right.flex-1
+              h1.left-margin
+                span Paper Prototypes 
+                |, literally.
+              p.left-margin
+                | Every tablet and peice of paper needed to have some semblence of verisimilitude in game, so their canvas interfaces had to have a professional look and design.
+                | Or, at least something you can reasonably see in an office setting. This included a start screen tablet for the player including a settings screen to tune the
+                | gameplay. I made sure to follow mobile-first design principles when I put it into the game, such as making the options bigger and simplifying dropbox options. 
+                | These inferfaces would be on mobile-seeming devices in VR, so I adapted the desktop designs to mobile eventually.  
+              p.left-margin
+                | In the middle of gameplay, after many decisions were made in the game's story, there would be a stats page telling the player what happens as a result of their
+                | decisions. I made 2 designs but were unable to get feedback on them due to the 5 week time crunch. In the end, I went with the latter design to go with the mobile-first 
+                | design philosophy of all the interfaces for the game. Alongside that, the second design made better use of chunking and symmetry.
+        section#info.info(name='info')
+          .container.flex.items-centre
+            .left.flex-1
+              h1
+                | The Final 
+                span Build
+              p.right-margin
+                | At the end of the 5 week production, the game is far from finished, but it was a good look and experience in learning VR. Unity's VR toolkit is interseting to work with,
+                | especially when designing interfaces for usability and accessability. From here, I would love to smooth the onboarding process for new players and figure out the pain-points in 
+                | my designs, especially in the context of VR UX design.
+              p.right-margin
+                | Play the game on 
+                a(href="https://goozmabackatitagain.itch.io/turpentine-vr" target="_blank") itch.io!
+            .right.flex-1.justify-center
+                video.content-medium.imgfloat-right(autoplay="false" controls muted loop)
+                    source(src="../vid/turpentinevr.mp4" type="video/mp4")
+                    img(src="../img/TurpentineVR/turpentinevr_logo.JPG" title="Your browser does not support mov, webm, or mp4 formats")
+        include ./includes/footer.pug
