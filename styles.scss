@@ -23,6 +23,12 @@ html {
     scroll-behavior: smooth;
 }
 
+p {
+    @media screen and (max-width: 768px) { 
+        font-size: 14px;
+    }
+}
+
 button {
 
     @media screen and (max-width: 768px) { 
@@ -34,7 +40,7 @@ button {
     @media screen and (min-width: 769px) { 
         width: 10rem;
         height: auto;
-        max-width: 20vw;
+        max-width: 100%;
     }
     
 }
@@ -143,13 +149,13 @@ body {
 .container {
 
     @media screen and (max-width: 768px) { 
-        width: 99vw;
-        padding-left: 0.2vw;
-        padding-right: 0.2vw;
+        width: 99%;
+        margin-left: 2%;
+        margin-right: 3%;
     }
 
     @media screen and (min-width: 769px) {
-        width: 90vw;
+        width: 90%;
         padding: 0 15px;
         margin: 0 auto;
     }
@@ -171,7 +177,7 @@ body {
     z-index: 100;
 
     .left img {
-        width: 30vw;
+        width: 50%;
         height: auto;
         max-height: 600px;
         max-width: 400px;
@@ -262,9 +268,10 @@ section.about {
         }
         img {
             display: block;
+            padding: auto;
             margin-left: auto;
             margin-right: auto;
-            width: 50vw;
+            width: 50%;
             height: auto;      
         }
     }
@@ -272,7 +279,7 @@ section.about {
     @media screen and (min-width: 769px) {
         padding-top: 3rem;
         img {
-            width: 20vw;
+            width: 80%;
             height: auto;
             max-height: 600px;
             max-width: 400px;
@@ -335,7 +342,7 @@ section.info {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50vw;
+            width: 70%;
             height: auto;
             max-width: none;
             max-height: none;      
