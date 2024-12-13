@@ -1,0 +1,68 @@
+doctype html
+html
+    head
+      meta(charset='utf-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1')
+      meta(name='referer' content='always')
+      link(rel='stylesheet' href='../styles.css')
+      title Ali's Portfolio - Plan of Attack Pokemon Showdown
+    body
+        header#home(name='home')
+          .container
+            nav.flex.items-centre.justify-between
+              .left.flex.justify-right
+                .logo
+                  img(src='../img/PoA/pokemonshowdownbeta.png' alt='PoA logo')
+                div
+                  a(href='../index.html') Back
+              .right
+                a(href='#contacts')
+                  button.btn.btn-primary Contact
+            .hero.flex.items-centre.justify-between
+              .left.flex-1.justify-center
+                img(src='../img/OOF/PoA_hero_img.JPG' alt='PoA Landing Page')
+              .right.flex-1
+                h6
+                  i Plan of Attack - A Pokemon Showdown Pet Mod
+                p(style='padding-top:1rem')
+                  | Pokemon Showdown is a pokemon battle simulator where many players can interact, make teams, and battle against 
+                  | each other. Plan of Attack is a custom game within a seperate server forking the Pokemon Showdown website as its base.
+                  | I work alongside many other people to make this metagame the best as possible for the many players that frequently play
+                  | this passion project between many people. I even act as the main Monotype tier leader.
+        section#info.info(name='info')
+          .container.flex.items-centre
+            .left.flex-1
+              h1
+                | Competitive 
+                span Gaming
+              p.right-margin
+                | As the Monotype tier leader for Plan of Attack, I analyze the current pokemon in the game and assign 
+                | tiers to them. I constantly work on the documents to ensure any new players coming into the tier know what
+                | is currently seeing the most success in the metagame.
+              p.right-margin
+                | Alongside that, I work with a team of other tier leaders to do tiering action and balance patches to ensure that 
+                | the entire metagame include OU, UU, Monotype, and Ubers have a balanced level of play between all the viable pokemon 
+                | within every tier. 
+            .right.flex-1.justify-center
+                iframe.imgfloat-right(style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="../img/PoA/PoA Monotype Viability Ranking (1).pdf" loading="lazy" title="Arcane Combat GDD" allowfullscreen)
+        section#info.info(name='info')
+          .container.flex.items-centre
+            .right.flex-1.justify-center
+                iframe.imgfloat-right(style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="../img/PoA/PoA Monotype Viability Ranking.pdf" loading="lazy" title="Arcane Combat GDD" allowfullscreen)
+            .right.flex-1
+              h1.left-margin
+                | Understanding Each 
+                span Pokemon
+              p.left-margin
+                | Of course, it is one thing to just put Pokemon onto a list and call it a day. But, I take the time to analyze each pokemon, new and old, to
+                | report on why decisions are made. The general public of people playing the game needs to know why this list exists as is, and making these tiering 
+                | decisions with explanations and reasoning helps the playerbase understand what shifts are happening within the Plan of Attack meta.
+              p.left-margin
+                | As the design team makes and adds new pokemon to the game, I take the time to report on them and add them to the game. It is then my responsibility 
+                | to balance, organize, and sort these pokemon within the tiers. Often do I work with the designers to see how pokemon can be overwhelming to the tier 
+                | and see if there is a compromise that allows the pokemon to exist without being banned without compromising the original intent of the pokemon.
+              p.left-margin
+                | To this day, I work alongside the Plan of Attack team, ensuring the playerbase is content with the current tiering and balance of the pokemon within it. 
+                | I collect data on various pokemon every day tournaments are held for Plan of Attack, tabulating and calcating win rates and usage rates for every pokemon and 
+                | reflecting the data on the tier list and resources as they occur.
+        include ./includes/footer.pug
